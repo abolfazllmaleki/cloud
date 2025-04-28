@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درس رایانش ابری - استاد منطقی</title>
+    <style>
+        :root {
+            --primary-color: #4a6bff;
+            --secondary-color: #f8f9fa;
+            --text-color: #333;
+            --light-text: #6c757d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7ff;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #6a11cb);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .course-info {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+        }
+        
+        .info-card {
+            text-align: center;
+            padding: 1rem;
+            flex: 1;
+        }
+        
+        .info-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .info-card p {
+            color: var(--light-text);
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #eee;
+        }
+        
+        .card ul {
+            list-style-type: none;
+        }
+        
+        .card li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card li:before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .full-width {
+            grid-column: 1 / -1;
+        }
+        
+        .cloud-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            color: var(--light-text);
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            
+            .course-info {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>درس رایانش ابری</h1>
+            <p class="subtitle">استاد: دکتر منطقی | ترم: بهار 1403</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="course-info">
+            <div class="info-card">
+                <h3>تعداد جلسات</h3>
+                <p>16 جلسه</p>
+            </div>
+            <div class="info-card">
+                <h3>مقطع تحصیلی</h3>
+                <p>کارشناسی ارشد</p>
+            </div>
+            <div class="info-card">
+                <h3>تعداد واحد</h3>
+                <p>3 واحد</p>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="card">
+                <h2>مفاهیم پایه رایانش ابری</h2>
+                <ul>
+                    <li>تعاریف و تاریخچه رایانش ابری</li>
+                    <li>مدل‌های سرویس (IaaS, PaaS, SaaS)</li>
+                    <li>مدل‌های استقرار (عمومی، خصوصی، ترکیبی)</li>
+                    <li>مزایا و چالش‌های رایانش ابری</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>فناوری‌های زیرساخت ابری</h2>
+                <ul>
+                    <li>مجازی‌سازی و کانتینرها</li>
+                    <li>ذخیره‌سازی ابری و مدیریت داده</li>
+                    <li>شبکه‌های نرم‌افزار محور (SDN)</li>
+                    <li>مدیریت منابع و زمان‌بندی</li>
+                </ul>
+            </div>
+            
+            <div class="card full-width">
+                <h2>ارائه‌دهندگان خدمات ابری</h2>
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cloud Computing" class="cloud-image">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div>
+                        <h3>سرویس‌های بین‌المللی</h3>
+                        <ul>
+                            <li>Amazon Web Services (AWS)</li>
+                            <li>Microsoft Azure</li>
+                            <li>Google Cloud Platform</li>
+                            <li>IBM Cloud</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>سرویس‌های داخلی</h3>
+                        <ul>
+                            <li>ابر آروان</li>
+                            <li>پارس پک</li>
+                            <li>دیجی‌او</li>
+                            <li>فرازار</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>امنیت در رایانش ابری</h2>
+                <ul>
+                    <li>چالش‌های امنیتی در محیط ابری</li>
+                    <li>مدل مسئولیت مشترک</li>
+                    <li>رمزنگاری داده‌ها</li>
+                    <li>مدیریت هویت و دسترسی</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>پروژه‌های عملی</h2>
+                <ul>
+                    <li>استقرار برنامه‌های وب روی ابر</li>
+                    <li>کار با سرویس‌های ذخیره‌سازی ابری</li>
+                    <li>پیاده‌سازی Serverless Functions</li>
+                    <li>مقیاس‌پذیری خودکار</li>
+                </ul>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 1403 - دانشکده مهندسی کامپیوتر - دانشگاه یاسوج</p>
+            <p>این صفحه به عنوان پروژه درس رایانش ابری ایجاد شده است</p>
+        </footer>
+    </div>
+    
+    <script>
+        // افزودن تعاملات ساده جاوااسکریپت
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    this.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.15)';
+                    setTimeout(() => {
+                        this.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
+                    }, 300);
+                });
+            });
+            
+            // تغییر رنگ هدر هنگام اسکرول
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                const scrollPosition = window.scrollY;
+                
+                if (scrollPosition > 50) {
+                    header.style.padding = '1rem 0';
+                    header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+                } else {
+                    header.style.padding = '2rem 0';
+                    header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
